@@ -4,17 +4,13 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Agrinho 2025 - Conexão Campo e Cidade - Renato</title>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   <style>
     * {
       margin: 0;
       padding: 0;
       box-sizing: border-box;
       font-family: 'Roboto', sans-serif;
-    }
-
-    html {
-      scroll-behavior: smooth;
     }
 
     body {
@@ -36,7 +32,6 @@
     }
 
     header h1 {
-      font-family: 'Playfair Display', serif;
       font-size: 4em;
       background: rgba(0, 0, 0, 0.4);
       padding: 20px;
@@ -47,9 +42,6 @@
       background-color: #00695c;
       padding: 1em;
       text-align: center;
-      position: sticky;
-      top: 0;
-      z-index: 1000;
     }
 
     nav a {
@@ -70,6 +62,7 @@
       padding: 50px 20px;
       max-width: 1200px;
       margin: auto;
+      position: relative;
     }
 
     section img {
@@ -79,20 +72,12 @@
       display: block;
       border-radius: 15px;
       box-shadow: 0 4px 10px rgba(0,0,0,0.2);
-      transition: transform 0.3s;
-    }
-
-    section img:hover {
-      transform: scale(1.03);
     }
 
     section h2 {
       font-size: 2.5em;
       margin-bottom: 20px;
       color: #00796b;
-      display: flex;
-      align-items: center;
-      gap: 10px;
     }
 
     section p {
@@ -101,9 +86,37 @@
       text-align: justify;
     }
 
-    .icon {
-      width: 32px;
-      height: 32px;
+    .highlight {
+      background-color: #b2dfdb;
+      padding: 10px;
+      border-left: 5px solid #00796b;
+      margin-bottom: 20px;
+      border-radius: 10px;
+    }
+
+    .quote {
+      font-style: italic;
+      color: #555;
+      border-left: 5px solid #004d40;
+      padding-left: 15px;
+      margin: 20px 0;
+    }
+
+    .decorative-img {
+      position: absolute;
+      opacity: 0.05;
+      width: 150px;
+      z-index: 0;
+    }
+
+    .top-left {
+      top: 10px;
+      left: 10px;
+    }
+
+    .bottom-right {
+      bottom: 10px;
+      right: 10px;
     }
 
     footer {
@@ -116,90 +129,95 @@
     footer p {
       font-size: 1.2em;
     }
-
-    footer .socials {
-      margin-top: 15px;
-    }
-
-    footer .socials a {
-      margin: 0 10px;
-      color: white;
-      text-decoration: none;
-      font-size: 1.4em;
-    }
-
-    #backToTop {
-      position: fixed;
-      bottom: 20px;
-      right: 20px;
-      background-color: #00796b;
-      color: white;
-      border: none;
-      padding: 10px 15px;
-      border-radius: 50%;
-      font-size: 1.5em;
-      cursor: pointer;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.3);
-      transition: background-color 0.3s;
-    }
-
-    #backToTop:hover {
-      background-color: #004d40;
-    }
-
-    .card {
-      background: #f0f0f0;
-      padding: 20px;
-      border-radius: 10px;
-      margin-top: 30px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    }
-
-    .highlight {
-      font-weight: bold;
-      color: #004d40;
-    }
   </style>
 </head>
+
 <body>
-  <header>
-    <h1>Projeto Agrinho 2025 - Conectando Campo e Cidade</h1>
-  </header>
 
-  <nav>
-    <a href="#introducao">Introdução</a>
-    <a href="#campo">A Vida no Campo</a>
-    <a href="#cidade">A Vida na Cidade</a>
-    <a href="#educacao">Educação</a>
-    <a href="#cultura">Cultura</a>
-    <a href="#agricultura">Agricultura</a>
-    <a href="#meioambiente">Meio Ambiente</a>
-    <a href="#conclusao">Conclusão</a>
-  </nav>
+<header>
+  <h1>Projeto Agrinho 2025 - Conectando Campo e Cidade</h1>
+</header>
 
-  <!-- Seções originais mantidas aqui (introducao, campo, cidade, etc.) -->
+<nav>
+  <a href="#introducao">Introdução</a>
+  <a href="#campo">A Vida no Campo</a>
+  <a href="#cidade">A Vida na Cidade</a>
+  <a href="#educacao">Educação e Tecnologia</a>
+  <a href="#cultura">Cultura e Tradição</a>
+  <a href="#agricultura">Agricultura Sustentável</a>
+  <a href="#meioambiente">Meio Ambiente</a>
+  <a href="#conclusao">Conclusão</a>
+</nav>
 
-  <section id="depoimentos">
-    <h2><img src="https://cdn-icons-png.flaticon.com/512/1828/1828970.png" alt="Depoimento" class="icon"> Depoimentos</h2>
-    <div class="card">
-      <p><span class="highlight">João, agricultor:</span> "Graças à tecnologia, hoje planto com mais eficiência e lucro."
-      </p>
-    </div>
-    <div class="card">
-      <p><span class="highlight">Maria, moradora da cidade:</span> "Compreendo cada vez mais a importância do campo na nossa mesa."
-      </p>
-    </div>
-  </section>
+<section id="introducao">
+  <h2>Introdução</h2>
+  <div class="highlight">Tema central: Campo e cidade de mãos dadas por um futuro sustentável.</div>
+  <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=800&q=80" alt="Campo e cidade">
+  <p>
+    O Agrinho 2025 tem como tema central a conexão entre o campo e a cidade. Este projeto, desenvolvido por Renato, visa mostrar a importância dessa união para o desenvolvimento sustentável, o fortalecimento da cultura, a preservação ambiental e o crescimento econômico de nossa sociedade.
+  </p>
+</section>
 
-  <button id="backToTop" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">&#8679;</button>
+<section id="campo">
+  <h2>A Vida no Campo</h2>
+  <img src="https://images.unsplash.com/photo-1568605114967-8130f3a36994?auto=format&fit=crop&w=800&q=80" alt="Vida no campo">
+  <p>
+    A vida no campo é marcada pelo contato direto com a natureza, pelo cultivo da terra e pelo respeito aos ciclos naturais. No campo, a agricultura e a pecuária são fundamentais para alimentar a população, gerando emprego e preservando tradições passadas de geração em geração.
+  </p>
+  <p class="quote">“O campo é o coração que alimenta o corpo da cidade.”</p>
+</section>
 
-  <footer>
-    <p>Projeto desenvolvido por Renato para o Agrinho 2025 &copy;</p>
-    <div class="socials">
-      <a href="#">Facebook</a>
-      <a href="#">Instagram</a>
-      <a href="#">YouTube</a>
-    </div>
-  </footer>
+<section id="cidade">
+  <h2>A Vida na Cidade</h2>
+  <img src="https://images.unsplash.com/photo-1508057198894-247b23fe5ade?auto=format&fit=crop&w=1200&q=80" alt="Vida na cidade">
+  <p>
+    A cidade é o centro da inovação, da tecnologia e dos serviços. É onde os produtos do campo são transformados e distribuídos para toda a população. A cidade oferece oportunidades de estudo, trabalho e cultura, mas depende totalmente da produção rural para sua sobrevivência.
+  </p>
+</section>
+
+<section id="educacao">
+  <h2>Educação e Tecnologia</h2>
+  <img src="https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?auto=format&fit=crop&w=800&q=80" alt="Tecnologia e Educação">
+  <p>
+    A educação rural é fundamental para levar conhecimento às famílias do campo. A tecnologia, como internet via satélite e máquinas agrícolas modernas, tem revolucionado a produção e a qualidade de vida no interior. Através do ensino de qualidade, jovens do campo podem se tornar agentes de transformação para o futuro.
+  </p>
+</section>
+
+<section id="cultura">
+  <h2>Cultura e Tradição</h2>
+  <img src="https://images.unsplash.com/photo-1580674284184-19978c7e4ec4?auto=format&fit=crop&w=1200&q=80" alt="Festas tradicionais">
+  <p>
+    As festas tradicionais, a música sertaneja, as danças folclóricas e a culinária típica fazem parte da identidade do campo e da cidade. Preservar essas tradições é valorizar a história do nosso povo, mostrando que a cultura é o que nos une.
+  </p>
+</section>
+
+<section id="agricultura">
+  <h2>Agricultura Sustentável</h2>
+  <img src="https://images.unsplash.com/photo-1556761175-4b46a572b786?auto=format&fit=crop&w=1200&q=80">
+  <p>
+    O futuro depende de práticas agrícolas que respeitem o meio ambiente, como o plantio direto, a rotação de culturas, o uso consciente da água e o reflorestamento de áreas degradadas. A agricultura sustentável garante alimento para todos sem destruir a natureza.
+  </p>
+</section>
+
+<section id="meioambiente">
+  <h2>Meio Ambiente</h2>
+  <img src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&w=800&q=80" alt="Natureza">
+  <p>
+    Proteger o meio ambiente é essencial para a saúde do campo e da cidade. Sem florestas, rios limpos e solos férteis, a vida se torna impossível. Cada pessoa tem seu papel em reduzir o consumo, evitar o desperdício e cuidar dos recursos naturais para as próximas gerações.
+  </p>
+</section>
+
+<section id="conclusao">
+  <h2>Conclusão</h2>
+  <img src="https://images.unsplash.com/photo-1617196038435-59d3d5864c7f?auto=format&fit=crop&w=1200&q=80" alt="Campo e cidade unidos">
+  <p>
+    A conexão entre campo e cidade é mais forte do que nunca. Precisamos valorizar o agricultor, respeitar o meio ambiente, preservar a cultura e investir em educação e tecnologia. Assim construiremos um Brasil mais justo, equilibrado e próspero para todos.
+  </p>
+</section>
+
+<footer>
+  <p>Projeto desenvolvido por Renato para o Agrinho 2025 ©</p>
+</footer>
+
 </body>
 </html>
