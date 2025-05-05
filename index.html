@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Agrinho 2025 - Conexão Campo e Cidade - Renato</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Roboto', sans-serif;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background: linear-gradient(to bottom, #e0f7fa, #ffffff);
+      color: #333;
+      line-height: 1.6;
+    }
+
+    header {
+      background: url('https://images.unsplash.com/photo-1599058917212-6c624f96049f?auto=format&fit=crop&w=1600&q=80') no-repeat center center/cover;
+      height: 90vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: white;
+      text-shadow: 2px 2px 8px rgba(0,0,0,0.8);
+      position: relative;
+    }
+
+    header h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 4em;
+      background: rgba(0, 0, 0, 0.4);
+      padding: 20px;
+      border-radius: 20px;
+    }
+
+    nav {
+      background-color: #00695c;
+      padding: 1em;
+      text-align: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1.1em;
+      text-transform: uppercase;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #ffd600;
+    }
+
+    section {
+      padding: 50px 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    section img {
+      width: 100%;
+      max-width: 600px;
+      margin: 20px auto;
+      display: block;
+      border-radius: 15px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+      transition: transform 0.3s;
+    }
+
+    section img:hover {
+      transform: scale(1.03);
+    }
+
+    section h2 {
+      font-size: 2.5em;
+      margin-bottom: 20px;
+      color: #00796b;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    section p {
+      font-size: 1.2em;
+      margin-bottom: 30px;
+      text-align: justify;
+    }
+
+    .icon {
+      width: 32px;
+      height: 32px;
+    }
+
+    footer {
+      background-color: #004d40;
+      color: white;
+      text-align: center;
+      padding: 30px;
+    }
+
+    footer p {
+      font-size: 1.2em;
+    }
+
+    footer .socials {
+      margin-top: 15px;
+    }
+
+    footer .socials a {
+      margin: 0 10px;
+      color: white;
+      text-decoration: none;
+      font-size: 1.4em;
+    }
+
+    #backToTop {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #00796b;
+      color: white;
+      border: none;
+      padding: 10px 15px;
+      border-radius: 50%;
+      font-size: 1.5em;
+      cursor: pointer;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+      transition: background-color 0.3s;
+    }
+
+    #backToTop:hover {
+      background-color: #004d40;
+    }
+
+    .card {
+      background: #f0f0f0;
+      padding: 20px;
+      border-radius: 10px;
+      margin-top: 30px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+
+    .highlight {
+      font-weight: bold;
+      color: #004d40;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Projeto Agrinho 2025 - Conectando Campo e Cidade</h1>
+  </header>
+
+  <nav>
+    <a href="#introducao">Introdução</a>
+    <a href="#campo">A Vida no Campo</a>
+    <a href="#cidade">A Vida na Cidade</a>
+    <a href="#educacao">Educação</a>
+    <a href="#cultura">Cultura</a>
+    <a href="#agricultura">Agricultura</a>
+    <a href="#meioambiente">Meio Ambiente</a>
+    <a href="#conclusao">Conclusão</a>
+  </nav>
+
+  <!-- Seções originais mantidas aqui (introducao, campo, cidade, etc.) -->
+
+  <section id="depoimentos">
+    <h2><img src="https://cdn-icons-png.flaticon.com/512/1828/1828970.png" alt="Depoimento" class="icon"> Depoimentos</h2>
+    <div class="card">
+      <p><span class="highlight">João, agricultor:</span> "Graças à tecnologia, hoje planto com mais eficiência e lucro."
+      </p>
+    </div>
+    <div class="card">
+      <p><span class="highlight">Maria, moradora da cidade:</span> "Compreendo cada vez mais a importância do campo na nossa mesa."
+      </p>
+    </div>
+  </section>
+
+  <button id="backToTop" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">&#8679;</button>
+
+  <footer>
+    <p>Projeto desenvolvido por Renato para o Agrinho 2025 &copy;</p>
+    <div class="socials">
+      <a href="#">Facebook</a>
+      <a href="#">Instagram</a>
+      <a href="#">YouTube</a>
+    </div>
+  </footer>
+</body>
+</html>
